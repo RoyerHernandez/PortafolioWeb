@@ -1,0 +1,174 @@
+/*
+selelector de etiqueta header -- section
+selector descendiente body header div nav ol li a
+selector de clase .class
+selector de id #portafolio
+*/
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+.header {
+    background-color: rgb(36, 37, 39);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+.menu{
+    height: inherit;
+}
+.logo{
+    height: 70px;
+    padding-left: 10px;
+}
+.header ol{
+    display: flex;
+    height: inherit;
+}
+.header ol li{
+    height: inherit;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+figure{
+    margin: 0;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif;    
+}
+h1{
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2px;  
+    color: white;  
+    margin: 0;
+}
+h2{
+    color: #026fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.hero strong{
+    color: #026fff;
+}
+.hero{
+    height: 300px;
+    background-image: url('../imagenes/hero.jpg');
+    background-color: rgb(36, 37, 39);
+    background-position: right;
+    background-size: 300px 400px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.portfolio{
+    background: #fafafa;    
+    padding: 20px;
+}
+.project-languaje, 
+.project-date,
+.project-url,
+.project-description
+{
+    margin: 10px 0;
+}
+.project strong{
+    font-family: 'Fjalla One', sans-serif;  
+}
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project{
+    display: flex;
+    border: 1px solid rgb(36, 37, 39);
+    border-radius: 10px;
+    border-top-right-radius: 30px ;
+    margin-bottom: 15px;
+    padding: 20px;
+    background:  white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.project-details{
+    width: 500px;
+}
+.project-imageContainer{
+    width: 500px;
+}
+.experience-list{
+    display: flex;
+}
+.experience-list-title{
+    margin-left: 20px;
+}
+.experience{
+    border: 1px solid rgb(36, 37, 39);
+    margin: 20px;
+    width: 400px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+.experience img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}.experience-details{
+    margin: 20px 40px;
+    margin-top: -60px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.experience-description{
+    text-align: left;
+}
+.experience-url{
+    border: 1px solid #026fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #026fff;
+    border-radius: 5px;
+}
+.footer{
+    background:  rgb(36, 37, 39);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img{
+    vertical-align: middle;
+}
