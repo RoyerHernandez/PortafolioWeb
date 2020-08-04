@@ -10,6 +10,7 @@
 </head>
 <body>
     <header class="header">
+        <div class="container">
             <figure class="logo">
                 <img src="imagenes/tesla-logo.png" width="100px" height="70px" alt="Logo RoyerHernandez">
             </figure>
@@ -26,15 +27,19 @@
                 </li>                
             </ol>
         </nav>
+    </div>
     </header>
     <section class="hero">
+        <div class="container">
         <h1 >Hola! Soy <strong>Royer Hernández</strong> <br/>
             Especialista en <strong>ingenieria de Software</strong>, <br/>
             <strong>Ingeniero de Sistemas</strong> y <strong>Desarrollador Web</strong>
         </h1>
-        <!--<img src="imagenes/hero.jpg" width="300" height="400">        -->
+        <img class="image-hero" src="imagenes/hero.jpg" width="250" height="300">       
+        </div>
     </section>
     <section id="portafoilo" class="portfolio">        
+        <div class="container">
         <h2>Portafolio (Proyectos Destacados)</h2>
         <article class="project">
             <div class="project-details" >                        
@@ -50,9 +55,13 @@
                 <img class="project-image" src="imagenes/paginas-web.png" alt="imagen Proyecto Encuentralo" width="350px"/>
             </figure>              
         </article>    
+        </div>
     </section>
+    <div class="container">
     <h2 class="experience-list-title">Más Sobre mi Experiencia</h2>
+    </div>
     <section id="experiencia" class="experience-list">        
+    <div class="container">
         <article class="experience">
             <figure class="experience-imageContainer">
                 <img clas="experience-image" src="imagenes/sevientrega.png" width="400" height="300"/>
@@ -97,16 +106,26 @@
             <a class="experience-url" href="https://www.youtube.com/watch?v=S8pTZmAnAvE&list=PLLyc3dewQxFcGteCFpchcfheT3K8HwQOd&index=1" target="_blank">Ver Contenido</a>
             </div>
         </article>
+    </div>
     </section>
     <section id="contacto" class="contact">
+        <div class="container">
         <form action="/subscripcion/" class="form-email">
             <H3>Contactame!</H3>
             <label for="email">E-mail</label>
-            <input type="text" id="email" placeholder="Dejame tu Email">
-            <input type="submit"  value="Enviar"/>
+                <input type="text" class="email-input" id="email" placeholder="Dejame tu Email">
+                <button>Enviar</button>                         
         </form>
+        <div class="social">
+            <a href="" class="social-link twitter"></a>
+            <a href="" class="social-link facebook"></a>
+            <a href="" class="social-link instagram"></a>
+            <a href="" class="social-link github"></a>
+        </div>
+        </div>
     </section>
     <footer class="footer">
+        <div class="container">
         <div>
             <p>Curriculum Vitate
              <img src="imagenes/tesla-logo.png" height="30px" alt="Logo RoyerHernandez"/>
@@ -114,6 +133,7 @@
         </div>        
         <div>
             <p>Twitter<a>https://Twitter.com</a></p>
+        </div>
         </div>
     </footer>
 </body>

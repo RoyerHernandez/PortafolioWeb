@@ -45,6 +45,15 @@ ul{
     padding: 0;
     list-style: none;
 }
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
 figure{
     margin: 0;
 }
@@ -78,14 +87,14 @@ h2{
     color: #026fff;
 }
 .hero{
-    height: 300px;
-    background-image: url('../imagenes/hero.jpg');
+    height: 300px;    
     background-color: rgb(36, 37, 39);
-    background-position: right;
-    background-size: 300px 400px;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.image-hero{
+    object-fit: cover;
 }
 .portfolio{
     background: #fafafa;    
@@ -126,6 +135,8 @@ h2{
 }
 .experience-list{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .experience-list-title{
     margin-left: 20px;
@@ -137,7 +148,7 @@ h2{
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
-    background: #f4fbff;
+    background: #f4fbff;    
 }
 .experience img{
     width: 400px;
@@ -161,6 +172,59 @@ h2{
     text-decoration: none;
     color: #026fff;
     border-radius: 5px;
+}
+.contact{
+    background:  rgb(36, 37, 39);
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;   
+    margin: 0 10px;
+    background-size: 50px 50px; 
+}
+.social-link.facebook{
+    background-image: url(../imagenes/icons8-facebook-50.png);
+    background-size: 50px;
+}
+.social-link.twitter{
+    background-image: url(../imagenes/icons8-twitter-50.png);
+    background-size: 50px;
+}
+.social-link.instagram{
+    background-image: url(../imagenes/icons8-instagram-50.png);
+    background-size: 50px;
+}
+.social-link.github{
+    background-image: url(../imagenes/icons8-github-50.png);
+    background-size: 50px;
+}
+.email-input{
+    background-image: url(../imagenes/e-mail.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 35px;
+    border-radius: 5px;
+    border: 1px solid rgb(36, 37, 39);
+    background-position-x: 5px;
+    background-position-y: center;
+}
+.form-email button{
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10 px 0;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+}
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .footer{
     background:  rgb(36, 37, 39);
