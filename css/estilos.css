@@ -16,6 +16,7 @@ body{
     justify-content: space-between;
     height: 70px;
     align-items: center;
+    flex-wrap: wrap;
 }
 .header .container {
     margin-top: 15px;
@@ -42,6 +43,7 @@ body{
     display: flex;
     align-items: center;
     padding: 0 10px;
+    flex-wrap: wrap;
 }
 ol,
 ul{
@@ -50,7 +52,8 @@ ul{
     list-style: none;
 }
 .container{
-    width: 1000px;
+    max-width: 1000px;
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -96,6 +99,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .image-hero{
     object-fit: cover;
@@ -128,15 +132,18 @@ h2{
     margin-bottom: 15px;
     padding: 20px;
     background:  white;
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .project-details{
-    width: 500px;
+    width: 50%;
 }
 .project-imageContainer{
-    width: 500px;
+    width: 50%;
+}
+.project-imageContainer img {
+    width: 100%;
 }
 .experience-list{
     display: flex;
@@ -147,9 +154,8 @@ h2{
     margin-left: 20px;
 }
 .experience{
-    border: 1px solid rgb(36, 37, 39);
-    margin: 20px;
-    width: 400px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -179,11 +185,12 @@ h2{
     border-radius: 5px;
 }
 .contact{
-    background:  rgb(36, 37, 39);
+    background:  rgb(34 84 185);
     display: flex;
     color: white;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .social-link{
     display: inline-block;
@@ -232,12 +239,128 @@ h2{
     font-family: 'Source Sans Pro', sans-serif;
 }
 .footer{
-    background:  rgb(36, 37, 39);
+    background:  rgb(22 47 97);
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer img{
     vertical-align: middle;
+}
+@media screen and (max-width: 1024px) {
+    .container{
+        padding: 0 1em;
+    }
+}
+@media screen and (max-width: 767px) {
+    .header{
+        display: block;
+        height: auto;
+
+    }
+    .header ol {
+        display: block;
+    }
+    .header ol li {
+        height: 40px;
+    }
+    .header a{
+        justify-content: center;
+    }
+    .header .logo {
+        text-align: center;
+    }
+    .project{
+        display: block;
+    }     
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+    .project-details{
+        width: auto;
+        font-size: 18px;
+    }
+    .project-languaje, .project-date, .project-url{
+        margin: .2em 0;
+    }
+    .project-title{
+        font-size: 1.2em;
+        margin-bottom: .3em;
+    }
+    .project-languaje{
+        font-size: 1em;
+    }   
+    .project-date{
+        font-size: 1em;
+    }    
+    .project-url{
+        font-size: .7em;
+    }    
+    .experience{
+        width: auto;
+        flex-shrink: initial;
+    }
+    .experience img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .project-details{
+        width: auto;
+        font-size: 16px;
+    }
+    .project-title{
+        font-size: 1.2em;
+    }
+    .project-languaje{
+        font-size: 1em;
+    }   
+    .project-date{
+        font-size: 1em;
+    }    
+    .project-url{
+        font-size: .7em;
+    }   
+    .project-languaje, .project-date, .project-url{
+        margin: .2em 0;
+    }    
+    .experience-details{
+        margin: -2em 1.5em 2em;
+        padding: 1em;
+    }
+    .contact{
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+    .form-email button{
+        margin: 1em auto;
+    }
+    .form-email h3{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 320px) {
+    .project-details{
+        width: auto;
+        font-size: 14px;
+    }
+    .project-title{
+        font-size: 1.2em;
+    }
+    .project-languaje{
+        font-size: 1em;
+    }   
+    .project-date{
+        font-size: 1em;
+    }    
+    .project-url{
+        font-size: .7em;
+    } 
+    .project-languaje, .project-date, .project-url{
+        margin: .2em 0;
+    }   
 }
