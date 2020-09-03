@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/estilos.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<i class="icon-menu burger-buttom" ></i>
+<i class="icon-menu burger-buttom" id="burguer-menu" ></i>
 <body>
     <header class="header">
         <div class="container">   
@@ -150,8 +150,22 @@
         </div>
         </div>
     </footer>
-    <script>
-           console.log(document.querySelector('.menu'));           
+    <script>           
+           const menu = document.querySelector('.menu');
+           console.log(menu); 
+           const burger = document.querySelector('#burguer-menu');
+           console.log(burger);            
+           burger.addEventListener('click',hideShow);
+            
+            function hideShow(){
+                if(menu.classList.contains('is-active')) {
+                    menu.classList.remove('is-active');                  
+                }
+                else{
+                    menu.classList.add('is-active');          
+                }                
+            }
+
     </script>
 </body>
 </html>
