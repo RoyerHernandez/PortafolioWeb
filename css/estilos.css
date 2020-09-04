@@ -94,6 +94,13 @@ body{
     height: inherit;
     text-decoration: solid;
 }
+.header ol li .border{
+    border: 1px solid white;
+    border-radius: 5%;
+    height: initial;
+    padding: 5px 15px;
+    margin: 20px 0;
+}
 .logo{
     height: 70px;
     padding-left: 10px;    
