@@ -182,7 +182,8 @@ h2{
     /*border-radius: 100%;*/
 }
 .portfolio{
-    background: #fafafa;    
+    background: #fafafa;   
+    border-left: 10px solid #026fff; 
 }
 .html-video{
     width: 100%;
